@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
+
+
+/* picture */
+.rela-block {
+    display: block;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .floated {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .floated.left {
+    float: left;
+  }
+  .floated.right {
+    float: right;
+  }
+  .abs-cent-text {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .orbitron {
+    display: inline-block;
+    position: relative;
+    font-family: montserrat, sans-serif ; font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+  .orbitron::before,
+  .orbitron::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+  }
+  .orbitron::before {
+    left: -65%;
+  }
+  .orbitron::after {
+    right: -63%;
+  }
+  .orbitron.black-orb::before,
+  .orbitron.black-orb::after {
+    background-color: #000;
+  }
+  
+  
+  .top-section {
+    height: 80vh;
+     background-size: cover;
+  }
+  .big-text {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 58px;
+    line-height: 72px;
+    letter-spacing: 20px;
+    margin-bottom: 60px;
+  }
+  .half-big-text {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: 12px;
+    margin-bottom: 45px;
+  }
+  .half-big-text.has-border {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 50px;
+    padding: 15px 45px;
+    border: 10px solid;
+  }
+  .under-top-section {
+    color: #fff;
+    background-color: #1d1d1d;
+    text-align: left;
+    padding: 0 6%;
+  }
+  .under-top-big-text {
+    margin-top: 80px;
+  }
+  .top-text {
+    color: #fff;
+    top: 58%;
+    line-height: 28px;
+  }
+  .abs-cent-text {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  
+  .grad-back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(transparent, rgba(0,0,0,0.9));
+  }
+  
+  /* End About Us */
+/***************************************************************************************/
+/* Start Media Query */
+@media (max-width: 767px) { /* Mobile & Tablet Rules */
+    .visible-xs {
+        display: block !important
+    }
+    .hidden-xs {
+        display: none !important
+    }
+    .responsive-paragraph {
+        font-size: 13px !important;
+        color: #333 !important;
+        letter-spacing: 1.4px;
+        text-align:center
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */
+    .container {
+        width: 750px
+    }
+    .visible-sm {
+        display: block !important
+    }
+    .hidden-sm {
+        display: none !important
+    }
+    .responsive-paragraph {
+        text-align: center;
+        font-size: 17px !important;
+        color: #555 !important;
+        letter-spacing: 1.3px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) { /* Medium Screen Rules */
+    .container {
+        width: 970px
+    }
+    .visible-md {
+        display: block !important
+    }
+    .hidden-md {
+        display: none !important
+    }
+    .responsive-paragraph {
+        font-size: 20px !important;
+        color: #777 !important;
+        letter-spacing: 1.1px;
+    }
+  }
+  @media (min-width: 1200px) { /* Large Screen Rules */
+    .container {
+        width: 1170px
+    }
+    .visible-lg {
+        display: block !important
+    }
+    .hidden-lg {
+        display: none !important
+    }
+  }
+
+
+
+
+  
+
+  .about-us {
+    /* padding: 30px 0; */
+    /* background-color: #ececec */
+  }
+  .about-us .h1 {
+    font-size: 50px;
+    color: #848484
+  }
+  .about-us .responsive-paragraph {
+    color: #848484;
+    font-family: Montserrat,Sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    text-align: justify;
+  }
+  /* End About Us */
+  /***************************************************************************************/
+  /* Start Media Query */
+  @media (max-width: 767px) { /* Mobile & Tablet Rules */
+    .visible-xs {
+        display: block !important
+    }
+    .hidden-xs {
+        display: none !important
+    }
+    .responsive-paragraph {
+        font-size: 13px !important;
+        color: #333 !important;
+        letter-spacing: 1.4px;
+        text-align:center
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */
+    .container {
+        width: 750px
+    }
+    .visible-sm {
+        display: block !important
+    }
+    .hidden-sm {
+        display: none !important
+    }
+    .responsive-paragraph {
+        text-align: center;
+        font-size: 17px !important;
+        color: #555 !important;
+        letter-spacing: 1.3px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) { /* Medium Screen Rules */
+    .container {
+        width: 970px
+    }
+    .visible-md {
+        display: block !important
+    }
+    .hidden-md {
+        display: none !important
+    }
+    .responsive-paragraph {
+        font-size: 20px !important;
+        color: #777 !important;
+        letter-spacing: 1.1px;
+    }
+  }
+  @media (min-width: 1200px) { /* Large Screen Rules */
+    .container {
+        width: 1170px
+    }
+    .visible-lg {
+        display: block !important
+    }
+    .hidden-lg {
+        display: none !important
+    }
+  }
+
+  /* Start My Framework */
+.text-center {
+    text-align: center
+  }
+  .container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .clearfix {
+    clear: both
+  }
+  .visible-xs, .visible-sm, .visible-md, .visible-lg {
+    display: none
+  }
+  .float-left {
+    float: left
+  }
+  .float-right {
+    float: right
+  }
+  .h1 {
+    font-size: 2em
+  }
+  .responsive-paragraph {
+    line-height: 1.8;
+    font-size: 26px
+  }
+  /* End My Framework */
+  
+
+
