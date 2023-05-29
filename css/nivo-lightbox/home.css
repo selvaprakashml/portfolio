@@ -470,7 +470,7 @@ body {
   width: 48%;
   margin-top: 200px;
   vertical-align: top;
-  background: url("/img/selva.jpg") no-repeat center;
+  background: url("selva.jpg") no-repeat center;
   background-size: 375px 576px;
 }
 .profile-view-container .arrow {
